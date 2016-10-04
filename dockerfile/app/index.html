@@ -30,13 +30,13 @@
  <script src='visiomatic/dist/jqplot/plugins/jqplot.cursor.js'></script>
  <script src='visiomatic/dist/spectrum.js'></script>
  <script src='leaflet/leaflet.js'></script>
- <script src='visiomatic/dist/visiomatic-src.js'></script>
+ <script src='visiomatic/dist/visiomatic.js'></script>
 </head>
 <body>
  <div id='map' style='background:black'></div>
 <script type="text/javascript">
   var map = L.map('map', {fullscreenControl: true, fadeAnimation: false});
-  var ima = L.tileLayer.iip('image.ptif').addTo(map);
+  var ima = L.tileLayer.iip('image.tif').addTo(map);
 
   var baseLayers = {
     'My image': ima
